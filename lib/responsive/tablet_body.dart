@@ -18,7 +18,7 @@ class _TabletScaffoldState extends State<TabletScaffold> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: defaultBackgroundColor,
+      backgroundColor: Theme.of(context).colorScheme.background,
       appBar: MyAppBar(useLightMode: widget.useLightMode, handleBrightnessChange: widget.handleBrightnessChange),
       drawer: myDrawer,
       body: Padding(

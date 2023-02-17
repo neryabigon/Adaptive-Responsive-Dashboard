@@ -41,8 +41,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData( useMaterial3: true, brightness: Brightness.light, colorSchemeSeed: Colors.red, ),
-      darkTheme: ThemeData( useMaterial3: true, brightness: Brightness.dark, primarySwatch: Colors.green, ),
+      theme: ThemeData( useMaterial3: true, brightness: Brightness.light, colorSchemeSeed: Colors.blueGrey, ),
+      darkTheme: ThemeData( useMaterial3: true, brightness: Brightness.dark, colorSchemeSeed: Colors.blueGrey, ),
       themeMode: themeMode,
       home: ResponsiveLayout(
         mobileBody: MobileScaffold(useLightMode: useLightMode, handleBrightnessChange: handleBrightnessChange),

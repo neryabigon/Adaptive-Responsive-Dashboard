@@ -8,7 +8,7 @@ class MyBox extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
-          color: Colors.grey[400],
+          color: Theme.of(context).colorScheme.secondary,
         ),
       ),
     );

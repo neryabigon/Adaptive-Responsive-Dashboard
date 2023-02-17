@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsivedashboard/util/myAppBar.dart';
 import '../constants.dart';
+import '../util/myNavRail.dart';
 import '../util/my_box.dart';
 import '../util/my_tile.dart';
 
@@ -18,7 +19,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: defaultBackgroundColor,
+      backgroundColor: Theme.of(context).colorScheme.background,
       appBar: MyAppBar(useLightMode: widget.useLightMode, handleBrightnessChange: widget.handleBrightnessChange),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -26,7 +27,8 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // open drawer
-            myDrawer,
+            // myDrawer,
+            const MyNavRail(),
 
             // first half of page
             Expanded(
@@ -72,7 +74,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                       height: 400,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8),
-                        color: Colors.grey[400],
+                        color: Theme.of(context).colorScheme.secondaryContainer,
                       ),
                     ),
                   ),
@@ -83,7 +85,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
-                          color: Colors.grey[200],
+                          color: Theme.of(context).colorScheme.secondary,
                         ),
                       ),
                     ),

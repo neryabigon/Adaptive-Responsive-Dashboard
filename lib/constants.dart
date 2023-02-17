@@ -1,29 +1,6 @@
 import 'package:flutter/material.dart';
 
 var defaultBackgroundColor = Colors.grey[300];
-// var appBarColor = Colors.grey[900];
-
-// bool useLightMode = true;
-//
-// var handleBrightnessChange = () {
-//   useLightMode = !useLightMode;
-// };
-
-
-// var myAppBar = AppBar(
-//   backgroundColor: appBarColor,
-//   title: const Text(' '),
-//   centerTitle: false,
-//   actions: [
-//     IconButton(
-//       icon: useLightMode
-//           ? const Icon(Icons.wb_sunny_outlined)
-//           : const Icon(Icons.wb_sunny),
-//       onPressed: handleBrightnessChange,
-//       tooltip: "Toggle brightness",
-//     ),
-//   ]
-// );
 
 var drawerTextColor = TextStyle(
   color: Colors.grey[600],
@@ -31,8 +8,9 @@ var drawerTextColor = TextStyle(
 
 var tilePadding = const EdgeInsets.only(left: 8.0, right: 8, top: 8);
 
+
 var myDrawer = Drawer(
-  backgroundColor: Colors.grey[300],
+  // backgroundColor: Colors.grey[300],
   elevation: 0,
   child: ListView(
     children: [
@@ -50,7 +28,7 @@ var myDrawer = Drawer(
             leading: const Icon(Icons.home),
             title: Text(
               'D A S H B O A R D',
-              style: drawerTextColor,
+              // style: drawerTextColor,
             ),
           ),
         ),
@@ -60,7 +38,7 @@ var myDrawer = Drawer(
             leading: const Icon(Icons.settings),
             title: Text(
               'S E T T I N G S',
-              style: drawerTextColor,
+              // style: drawerTextColor,
             ),
           ),
         ),
@@ -70,7 +48,7 @@ var myDrawer = Drawer(
             leading: const Icon(Icons.info),
             title: Text(
               'A B O U T',
-              style: drawerTextColor,
+              // style: drawerTextColor,
             ),
           ),
         ),
@@ -80,7 +58,7 @@ var myDrawer = Drawer(
             leading: const Icon(Icons.logout),
             title: Text(
               'L O G O U T',
-              style: drawerTextColor,
+              // style: drawerTextColor,
             ),
           ),
         ),

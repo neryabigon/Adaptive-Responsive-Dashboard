@@ -19,14 +19,13 @@ class _MyAppBarState extends State<MyAppBar> {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-        // backgroundColor: appBarColor,
         title: const Text(' '),
         centerTitle: false,
         actions: [
           IconButton(
             icon: widget.useLightMode
-                ? const Icon(Icons.wb_sunny_outlined)
-                : const Icon(Icons.wb_sunny),
+                ? Icon(Icons.wb_sunny_outlined, color: Theme.of(context).colorScheme.onSurface)
+                : Icon(Icons.wb_sunny, color: Theme.of(context).colorScheme.onSurface),
             onPressed: () {
               widget.handleBrightnessChange(!widget.useLightMode);
             },
